@@ -1,0 +1,9 @@
+@import '../../styles/vars';
+
+.page-wrapper {
+  &__title {
+    border-bottom: 1px solid $grey3;
+    margin-bottom: 30px;
+    margin-top: 20px;
+  }
+}

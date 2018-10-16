@@ -1,0 +1,122 @@
+@import '../../styles/vars';
+
+.navigation {
+  background: $nav-bar;
+  width: 100%;
+
+  &__column {
+    align-items: center;
+    color: $white;
+    display: flex;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    position: relative;
+    white-space: nowrap;
+    width: 100%;
+    z-index: 1;
+
+    @media only screen and (max-width: $nav-bar) {
+      padding: 15px;
+    }
+
+    > h4 {
+      flex: 1;
+      margin: 0;
+      color: #fff;
+    }
+
+    > nav {
+      flex: 1;
+    }
+
+    > div {
+      left: 0;
+      position: fixed;
+      top: 0;
+    }
+  }
+}
+
+/* Position and sizing of burger button */
+.bm-burger-button {
+  height: 15px;
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  width: 20px;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: $white;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #bdc3c7;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: $nav-bar;
+  font-size: 1.15em;
+  padding: 2.5em 1.5em 0;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+  padding: 0.8em;
+}
+
+/* Individual item */
+.bm-item {
+  color: $white;
+  display: inline-block;
+
+  &:hover,
+  &:focus {
+    color: darken($white, 20%);
+  }
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.navigation-bar {
+  color: $white;
+  display: flex;
+  position: relative;
+  z-index: 1;
+
+  > *:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  > a {
+    color: $grey2;
+
+    &:hover,
+    &:focus {
+      color: darken($white, 30%);
+    }
+  }
+
+  > p {
+    color: $white;
+    margin-bottom: 0;
+  }
+}

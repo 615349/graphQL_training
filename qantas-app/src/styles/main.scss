@@ -1,0 +1,29 @@
+@import '../../node_modules/foundation-sites/scss/foundation';
+
+@include foundation-flex-grid;
+@include foundation-flex-classes;
+@include foundation-everything;
+
+html,
+body,
+.root,
+main {
+  height: 100%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.core-layout {
+  &__row {
+    display: flex;
+    flex: 1;
+
+    > .columns {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}

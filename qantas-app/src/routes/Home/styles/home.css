@@ -1,0 +1,58 @@
+.home {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; }
+  @media only screen and (max-width: 1000px) {
+    .home {
+      background-position: center; } }
+  @media only screen and (max-width: 639px) {
+    .home {
+      /*
+       We have to use important here because we're setting the background image using an import
+       in the JS code
+     */
+      background-image: none !important; } }
+  .home__content {
+    text-align: right;
+    margin-right: 5%;
+    margin-top: 11%;
+    max-width: 500px; }
+    .home__content > button {
+      margin: 0; }
+      @media only screen and (max-width: 639px) {
+        .home__content > button {
+          margin-top: 20px;
+          width: 50%; } }
+    @media only screen and (max-width: 800px) {
+      .home__content {
+        margin-top: 11%; } }
+    @media only screen and (max-width: 639px) {
+      .home__content {
+        margin-top: 55px;
+        margin-right: 0;
+        text-align: center;
+        max-width: initial;
+        border-bottom: 1px solid #323232;
+        padding-bottom: 70px; }
+        .home__content > h3 {
+          margin-top: 20px; } }
+
+@media only screen and (min-width: 639px) {
+  .page-home .navigation-bar > a {
+    color: #0a0a0a; }
+    .page-home .navigation-bar > a:hover, .page-home .navigation-bar > a:focus {
+      color: #575757; }
+  .page-home .navigation {
+    background: none; }
+    .page-home .navigation__column {
+      color: #0a0a0a; }
+    .page-home .navigation .bm-burger-bars {
+      background: #0a0a0a; } }

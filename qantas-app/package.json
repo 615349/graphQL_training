@@ -1,0 +1,47 @@
+{
+  "name": "qantas-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "apollo-boost": "^0.1.16",
+    "foundation-sites": "^6.5.0-rc.3",
+    "graphql": "^14.0.2",
+    "graphql-tag": "^2.9.2",
+    "node-sass-chokidar": "^1.3.3",
+    "prop-types": "^15.6.2",
+    "react": "^16.5.0",
+    "react-apollo": "^2.1.11",
+    "react-burger-menu": "^2.5.2",
+    "react-dom": "^16.5.0",
+    "react-foundation": "^0.9.6",
+    "react-responsive": "^5.0.0",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "1.1.5",
+    "react-select": "^2.0.0",
+    "sweetalert2": "^7.26.28"
+  },
+  "devDependencies": {
+    "enzyme": "^3.6.0",
+    "enzyme-adapter-react-16": "^1.5.0",
+    "eslint": "^5.5.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-react": "^7.11.1",
+    "jest-enzyme": "^6.0.4",
+    "react-test-renderer": "^16.5.1",
+    "stylelint": "^9.5.0",
+    "stylelint-config-sass-guidelines": "^5.2.0"
+  },
+  "scripts": {
+    "build": "react-scripts build",
+    "build-css": "node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/",
+    "eject": "react-scripts eject",
+    "lint": "eslint . --cache",
+    "lint:sass": "stylelint \"src/**/*.scss\" --syntax scss --cache --cache-location .stylelintcache",
+    "lint:sass:fix": "npm run lint:sass -- --fix",
+    "test": "react-scripts test --env=jsdom",
+    "start": "react-scripts start",
+    "watch-css": "npm run build-css && node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/ --watch --recursive"
+  }
+}

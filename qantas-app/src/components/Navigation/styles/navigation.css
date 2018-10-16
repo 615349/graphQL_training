@@ -1,0 +1,25 @@
+.navigation {
+  width: 100%;
+  background: #323232; }
+  .navigation__column {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    align-items: center;
+    white-space: nowrap;
+    color: white; }
+    @media only screen and (max-width: 639px) {
+      .navigation__column {
+        padding: 15px; } }
+    .navigation__column > h4 {
+      margin: 0;
+      flex: 1; }
+    .navigation__column > nav {
+      flex: 1; }
+    .navigation__column > div {
+      position: fixed;
+      top: 0;
+      left: 0; }

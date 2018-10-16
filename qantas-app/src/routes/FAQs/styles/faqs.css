@@ -1,0 +1,27 @@
+.faqs {
+  display: flex;
+  flex: 1;
+  height: 100%; }
+  .faqs__content__title {
+    margin-bottom: 20px; }
+  @media only screen and (max-width: 639px) {
+    .faqs {
+      flex-direction: column; } }
+  .faqs__questions {
+    display: flex;
+    flex-direction: column;
+    background: #f7f7f7;
+    height: 100%;
+    padding: 20px;
+    margin-left: 20px;
+    border: 1px solid #cecece;
+    border-radius: 2px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    min-width: 35%;
+    width: 35%; }
+    .faqs__questions > a,
+    .faqs__questions > p {
+      margin-bottom: 30px; }
+  .faqs__questions-dropdown {
+    margin-bottom: 20px; }

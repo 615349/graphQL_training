@@ -1,0 +1,33 @@
+@keyframes bouncing-loader {
+  from {
+    opacity: 1;
+    transform: translateY(0); }
+  to {
+    opacity: 0.1;
+    transform: translateY(-1rem); } }
+
+.loading {
+  position: fixed;
+  z-index: 2;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.7); }
+  .loading__icon {
+    display: flex;
+    justify-content: center;
+    width: 100;
+    height: 100%;
+    align-items: center; }
+    .loading__icon > div {
+      width: 2rem;
+      height: 2rem;
+      margin: 3rem 0.2rem;
+      background: #323232;
+      border-radius: 50%;
+      animation: bouncing-loader 0.6s infinite alternate; }
+    .loading__icon > div:nth-child(2) {
+      animation-delay: 0.2s; }
+    .loading__icon > div:nth-child(3) {
+      animation-delay: 0.4s; }

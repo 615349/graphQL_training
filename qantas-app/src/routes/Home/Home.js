@@ -1,0 +1,27 @@
+import React from 'react';
+import PropTypes from 'prop-types';
+import { Button } from 'react-foundation';
+import MediaQuery from 'react-responsive';
+import HERO_IMAGE from '../../assets/images/hero.jpg';
+import { SUBTITLE } from './constants/content';
+import './styles/home.css';
+
+export default function Home({ history }) {
+  return (
+    <div className="home" style={{ backgroundImage: `url(${HERO_IMAGE})` }}>
+      <div className="home__content">
+        <MediaQuery maxWidth={639}>
+          <img alt="hero-min" src={HERO_IMAGE} />
+        </MediaQuery>
+        <h3>{SUBTITLE}</h3>
+        <Button onClick={() => history.push('/faqs')}>Learn More</Button>
+      </div>
+    </div>
+  );
+}
+
+Home.propTypes = {
+  history: PropTypes.shape({
+    push: PropTypes.func,
+  }).isRequired,
+};

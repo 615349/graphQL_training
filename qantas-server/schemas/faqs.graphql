@@ -1,0 +1,9 @@
+type Query {
+    faqs: [Faq]
+}
+
+type Faq {
+    id: Int
+    title: String
+    body: String
+}

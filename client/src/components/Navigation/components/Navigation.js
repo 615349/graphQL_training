@@ -11,7 +11,7 @@ export default function Navigation({ location }) {
     <div className="navigation">
       <Row>
         <Column className="navigation__column">
-          <h4>Quantas Cars</h4>
+          <h4>Qantas Cars</h4>
           <MediaQuery key="navigation-bar" minWidth={640}>
             <NavigationBar location={location} />
           </MediaQuery>

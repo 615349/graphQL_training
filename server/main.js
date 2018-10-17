@@ -1,4 +1,4 @@
-const express = require('express');
+const app = require('express')();
 const graphQl = require('express-graphql');
 const cors = require('cors');
 const root  = require('./apis');
@@ -9,8 +9,6 @@ const CORS_OPTIONS = {
   optionsSuccessStatus: 200
 };
 
-const app = express();
-
 app.use(cors(CORS_OPTIONS));
 
 app.use('/graphql', graphQl({
@@ -19,4 +17,4 @@ app.use('/graphql', graphQl({
   graphiql: true
 }));
 
-app.listen(3001, () => console.log('Qantas app server running on localhost:3001/graphql'));
+app.listen(3001, () => console.log('server running on localhost:3001/graphql'));

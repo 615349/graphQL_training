@@ -16,20 +16,19 @@
     "react-foundation": "^0.9.6",
     "react-responsive": "^5.0.0",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "1.1.5",
+    "react-scripts": "2.0.5",
     "react-select": "^2.0.0",
     "sweetalert2": "^7.26.28"
   },
   "devDependencies": {
-    "enzyme": "^3.6.0",
-    "enzyme-adapter-react-16": "^1.5.0",
-    "eslint": "^5.5.0",
+    "enzyme": "^3.7.0",
+    "enzyme-adapter-react-16": "^1.6.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jsx-a11y": "^6.1.1",
     "eslint-plugin-react": "^7.11.1",
-    "jest-enzyme": "^6.0.4",
-    "react-test-renderer": "^16.5.1",
+    "jest-enzyme": "^7.0.0",
+    "react-test-renderer": "^16.5.2",
     "stylelint": "^9.5.0",
     "stylelint-config-sass-guidelines": "^5.2.0"
   },
@@ -43,5 +42,11 @@
     "test": "react-scripts test --env=jsdom",
     "start": "react-scripts start",
     "watch-css": "npm run build-css && node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/ --watch --recursive"
-  }
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }

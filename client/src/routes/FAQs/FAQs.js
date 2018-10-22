@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import MediaQuery from 'react-responsive';
 import Select from 'react-select';
-import PageWrapper from '../../../components/PageWrapper';
-import '../styles/faqs.css';
+import PageWrapper from '../../components/PageWrapper/index';
+import './faqs.scss';
 
 function buildFAQURL(faq) {
   return faq.title.toLowerCase().replace(/ /g, '-');

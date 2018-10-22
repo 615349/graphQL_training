@@ -1,8 +1,8 @@
 import React from 'react';
 import { slide as Menu } from 'react-burger-menu';
 import { Link } from 'react-router-dom';
-import NAV_LINKS from '../constants/navLinks';
-import '../styles/expandable-navigation.css';
+import { NAV_LINKS } from '../../constants/';
+import './navigation.scss';
 
 export default function ExpandableNavigation() {
   return (

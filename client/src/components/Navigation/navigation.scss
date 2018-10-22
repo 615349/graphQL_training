@@ -1,4 +1,40 @@
-@import 'styles/vars';
+@import '../../styles/vars';
+
+.navigation {
+  background: $nav-bar;
+  width: 100%;
+
+  &__column {
+    align-items: center;
+    color: $white;
+    display: flex;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    position: relative;
+    white-space: nowrap;
+    width: 100%;
+    z-index: 1;
+
+    @media only screen and (max-width: $nav-bar) {
+      padding: 15px;
+    }
+
+    > h4 {
+      flex: 1;
+      margin: 0;
+    }
+
+    > nav {
+      flex: 1;
+    }
+
+    > div {
+      left: 0;
+      position: fixed;
+      top: 0;
+    }
+  }
+}
 
 /* Position and sizing of burger button */
 .bm-burger-button {
@@ -57,4 +93,29 @@
 /* Styling of overlay */
 .bm-overlay {
   background: rgba(0, 0, 0, 0.3);
+}
+
+.navigation-bar {
+  color: $white;
+  display: flex;
+  position: relative;
+  z-index: 1;
+
+  > *:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  > a {
+    color: $white;
+
+    &:hover,
+    &:focus {
+      color: darken($white, 30%);
+    }
+  }
+
+  > p {
+    color: darken($white, 40%);
+    margin-bottom: 0;
+  }
 }

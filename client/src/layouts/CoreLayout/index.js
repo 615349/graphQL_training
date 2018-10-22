@@ -1,1 +1,4 @@
-export { default } from './containers/CoreLayout';
+import { withRouter } from 'react-router-dom';
+import CoreLayout from './CoreLayout';
+
+export default withRouter(CoreLayout);

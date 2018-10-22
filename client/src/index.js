@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import ApolloClient from 'apollo-boost';
 import AppContainer from './containers/AppContainer';
 import Routes from './routes';
-import './styles/main.css';
+import './styles/main.scss';
 
 const client = new ApolloClient({ uri: 'http://localhost:3001/graphql' });
 

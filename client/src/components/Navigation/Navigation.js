@@ -4,7 +4,7 @@ import MediaQuery from 'react-responsive';
 import { Column, Row } from 'react-foundation';
 import ExpandableNavigation from './ExpandableNavigation';
 import NavigationBar from './NavigationBar';
-import '../styles/navigation.css';
+import './navigation.scss';
 
 export default function Navigation({ location }) {
   return (

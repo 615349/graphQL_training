@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Column, Row } from 'react-foundation';
-import Navigation from '../../../components/Navigation';
+import Navigation from '../../components/Navigation/';
 
 function transformPathToClass(pathname) {
   return pathname

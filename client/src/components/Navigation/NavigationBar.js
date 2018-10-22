@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import NAV_LINKS from '../constants/navLinks';
-import '../styles/navigation-bar.css';
+import { NAV_LINKS } from '../../constants/';
+import './navigation.scss';
 
 export default function NavigationBar({ location }) {
   return (

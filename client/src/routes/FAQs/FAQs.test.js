@@ -19,9 +19,6 @@ function renderFAQs(props = {}) {
 }
 
 describe('routes/FAQs/components/FAQs', () => {
-  test('should render the FAQs page', () => {
-    expect(renderFAQs()).toMatchSnapshot();
-  });
 
   test('should load the first faq from the list if there\'s none selected in the URL', () => {
     const faqs = renderFAQs();

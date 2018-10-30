@@ -10,7 +10,9 @@ The server is written with node.js using GraphQL for the API.
 
 You will need to run 'yarn' in the folder to install the dependencies.
 
-To start the server, run 'node main.js'.
+To start the server, run './node_modules/nodemon/bin/nodemon.js main.js'.
+
+If there is any change in server side, no need to restart server manually.
 
 
 
